@@ -15,6 +15,7 @@ Create a conda environment to run the notebook and train the model or to run the
 Install anaconda, clone the repository, navigate to the folder, and then run:
 
 ```
+conda update -n base conda
 conda install nb_conda_kernels
 conda env create -f env.yml
 ipython kernel install --user --name=DeViSE_env
