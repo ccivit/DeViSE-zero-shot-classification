@@ -9,7 +9,7 @@ DeViSE maps images into a rich semantic embedding space to combine the image rec
 The training notebook is based on [fast.ai (part 2, lesson 11)](https://youtu.be/tY0n9OT5_nA?t=6930) but uses a custom PyTorch model. The model is deployed to AWS using Flask, Swagger UI, and Docker.
 
 ```
-docker run -i -t -p 8888:8888 continuumio/anaconda3 /bin/bash -c "/opt/conda/bin/conda install jupyter -y --quiet && mkdir /opt/notebooks && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser"
+docker run -i -t -p 8888:8888 continuumio/anaconda3 /bin/bash -c "/opt/conda/bin/conda install jupyter -y --quiet && mkdir /opt/notebooks && /opt/conda/bin/jupyter notebook --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser --allow-root"
 ```
 
 ## Getting Started
